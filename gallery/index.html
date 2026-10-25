@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Gallery — Permanent Makeup Results Brooklyn NYC | Beauty by Ksenia</title>
+<meta name="description" content="Before & after gallery of permanent makeup results — powder brows, lip blushing & eyeliner tattoo in Brooklyn, NYC. 30 years of work by licensed artist Ksenia."/>
+<meta name="keywords" content="permanent makeup before after brooklyn, powder brows results nyc, lip blushing before after, eyeliner tattoo results brooklyn, permanent makeup gallery nyc"/>
+
+<meta property="og:title" content="Gallery | Beauty by Ksenia — Permanent Makeup Brooklyn"/>
+<meta property="og:description" content="Real results. Powder brows, lip blushing & eyeliner tattoo by Ksenia — licensed permanent makeup artist in Brooklyn, NYC."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="../images/bruno.jpg"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --ink:      #161311;
+  --ink2:     #1f1c19;
+  --ink3:     #2a2622;
+  --warm:     #f2ece4;
+  --muted:    #7d746c;
+  --gold:     #c8a46a;
+  --gold-dim: rgba(200,164,106,.18);
+  --border:   rgba(200,164,106,.22);
+  --ease:     cubic-bezier(.4,0,.2,1);
+  --max:      1240px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--warm);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font:inherit}
+
+.eyebrow{display:inline-block;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.08;color:var(--warm)}
+.section-title em{font-style:italic;color:var(--gold)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .55s var(--ease),transform .55s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* ─── HEADER ─── */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;padding:0 48px;border-bottom:1px solid var(--border);background:rgba(22,19,17,.88);backdrop-filter:blur(16px);transition:background .3s var(--ease)}
+.site-header.scrolled{background:rgba(22,19,17,.97)}
+.header-inner{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;letter-spacing:.1em;color:var(--gold);white-space:nowrap;flex-shrink:0}
+.logo span{font-style:italic}
+.site-nav{display:flex;align-items:center;gap:32px}
+.site-nav a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);opacity:.6;transition:opacity .2s;white-space:nowrap}
+.site-nav a:hover,.site-nav a.active{opacity:1}
+.site-nav a.active{color:var(--gold)}
+.header-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.header-phone{font-size:.78rem;letter-spacing:.06em;color:var(--muted);transition:color .2s}
+.header-phone:hover{color:var(--warm)}
+.btn-nav-book{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:9px 22px;transition:background .2s,color .2s;white-space:nowrap}
+.btn-nav-book:hover{background:var(--gold);color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;padding:4px;width:32px}
+.burger span{display:block;height:1px;background:var(--warm);transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:68px 0 0 0;z-index:190;background:var(--ink2);flex-direction:column;align-items:flex-start;justify-content:center;padding:48px;gap:36px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--warm);opacity:.8;transition:opacity .2s,color .2s}
+.mobile-nav a:hover{opacity:1;color:var(--gold)}
+.mobile-nav-contact{margin-top:24px;font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:10px}
+.mobile-nav-contact a{color:var(--warm)}
+
+/* ─── PAGE HEADER ─── */
+.page-header{
+  padding:140px 80px 72px;
+  background:var(--ink2);
+  border-bottom:1px solid var(--border);
+}
+.page-header-inner{
+  max-width:var(--max);margin:0 auto;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:40px;
+  flex-wrap:wrap;
+}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.breadcrumb a{color:var(--muted);transition:color .2s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb-sep{color:var(--border)}
+.page-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,5rem);font-weight:300;line-height:1.0;color:var(--warm)}
+.page-h1 em{font-style:italic;color:var(--gold)}
+.page-header-meta{
+  text-align:right;padding-bottom:8px;
+  flex-shrink:0;
+}
+.meta-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--gold);line-height:1;display:block}
+.meta-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+/* ─── FILTER BAR ─── */
+.filter-bar{
+  background:var(--ink);
+  border-bottom:1px solid var(--border);
+  padding:0 80px;
+  position:sticky;top:68px;z-index:100;
+}
+.filter-inner{
+  max-width:var(--max);margin:0 auto;
+  display:flex;align-items:center;
+  overflow-x:auto;scrollbar-width:none;
+}
+.filter-inner::-webkit-scrollbar{display:none}
+.filter-btn{
+  font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);padding:18px 24px;
+  border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;
+  white-space:nowrap;flex-shrink:0;
+  background:none;border-top:none;border-left:none;border-right:none;
+}
+.filter-btn:hover{color:var(--warm)}
+.filter-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ─── MASONRY GALLERY ─── */
+.gallery-section{
+  padding:3px;
+  background:var(--ink);
+}
+.masonry{
+  columns:3;
+  column-gap:3px;
+  max-width:100%;
+}
+.gallery-item{
+  break-inside:avoid;
+  position:relative;
+  overflow:hidden;
+  margin-bottom:3px;
+  cursor:pointer;
+  background:var(--ink3);
+}
+.gallery-item img{
+  width:100%;
+  display:block;
+  filter:brightness(.78) saturate(.88) contrast(1.04);
+  transition:transform .6s var(--ease), filter .4s;
+}
+.gallery-item:hover img{
+  transform:scale(1.04);
+  filter:brightness(.55) saturate(.7) contrast(1.04);
+}
+/* Overlay on hover */
+.gallery-item-overlay{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:24px 20px;
+  background:linear-gradient(to top, rgba(22,19,17,.85) 0%, transparent 60%);
+  opacity:0;
+  transition:opacity .3s var(--ease);
+}
+.gallery-item:hover .gallery-item-overlay{opacity:1}
+.gallery-item-tag{
+  display:inline-block;
+  font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;
+  padding:3px 10px;margin-bottom:8px;align-self:flex-start;
+}
+.gallery-item-tag.brows{color:var(--gold);border:1px solid rgba(200,164,106,.4)}
+.gallery-item-tag.lips{color:#b8706a;border:1px solid rgba(184,112,106,.4)}
+.gallery-item-tag.eyeliner{color:#a8b0bc;border:1px solid rgba(168,176,188,.4)}
+.gallery-item-tag.process{color:var(--muted);border:1px solid var(--border)}
+.gallery-item-caption{
+  font-size:.75rem;color:var(--warm);line-height:1.4;
+}
+.gallery-zoom-icon{
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;
+  border:1px solid rgba(242,236,228,.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;color:var(--warm);opacity:0;
+  transition:opacity .3s;
+}
+.gallery-item:hover .gallery-zoom-icon{opacity:1}
+
+/* hidden for filter */
+.gallery-item.hidden{display:none}
+
+/* ─── LIGHTBOX ─── */
+.lightbox{
+  position:fixed;inset:0;z-index:500;
+  background:rgba(22,19,17,.96);
+  display:none;
+  align-items:center;justify-content:center;
+  padding:24px;
+}
+.lightbox.open{display:flex}
+.lightbox-img{
+  max-width:min(860px, 90vw);
+  max-height:90vh;
+  object-fit:contain;
+  filter:brightness(.95);
+}
+.lightbox-close{
+  position:absolute;top:24px;right:28px;
+  font-size:1.6rem;color:var(--muted);
+  transition:color .2s;line-height:1;
+  background:none;border:none;cursor:pointer;
+  font-family:'DM Sans',sans-serif;
+}
+.lightbox-close:hover{color:var(--warm)}
+.lightbox-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:44px;height:44px;
+  border:1px solid rgba(242,236,228,.2);
+  background:rgba(22,19,17,.6);
+  color:var(--warm);font-size:1.1rem;
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .2s,background .2s;
+}
+.lightbox-nav:hover{border-color:var(--gold);background:rgba(22,19,17,.9)}
+.lightbox-prev{left:20px}
+.lightbox-next{right:20px}
+.lightbox-caption{
+  position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);white-space:nowrap;
+}
+.lightbox-counter{
+  position:absolute;top:28px;left:50%;transform:translateX(-50%);
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muted);
+}
+
+/* ─── INSTAGRAM CTA ─── */
+.instagram-cta{
+  padding:80px;
+  background:var(--ink2);
+  border-top:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;gap:40px;
+}
+.ig-text{}
+.ig-eyebrow{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.ig-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;color:var(--warm);line-height:1.1}
+.ig-headline em{font-style:italic;color:var(--gold)}
+.ig-sub{margin-top:10px;font-size:.88rem;color:var(--muted)}
+.btn-ig{
+  display:inline-flex;align-items:center;gap:12px;
+  border:1px solid var(--border);color:var(--warm);
+  padding:18px 36px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  flex-shrink:0;white-space:nowrap;
+  transition:border-color .2s,background .2s;
+}
+.btn-ig:hover{border-color:var(--gold);background:var(--gold-dim)}
+.btn-ig svg{width:18px;height:18px;fill:var(--warm)}
+
+/* ─── CTA ─── */
+.cta-strip{padding:80px;background:var(--gold);display:flex;align-items:center;justify-content:space-between;gap:40px}
+.cta-label{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(22,19,17,.55);margin-bottom:8px}
+.cta-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;color:var(--ink);line-height:1.1}
+.cta-sub{margin-top:8px;font-size:.88rem;color:rgba(22,19,17,.65)}
+.btn-dark{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--gold);padding:18px 44px;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;transition:background .2s}
+.btn-dark:hover{background:var(--ink2)}
+
+/* ─── FOOTER ─── */
+.site-footer{border-top:1px solid var(--border);background:var(--ink);padding:36px 80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.1em;color:var(--gold)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.footer-links a:hover{color:var(--warm)}
+.footer-copy{font-size:.66rem;color:var(--muted)}
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:300;width:50px;height:50px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.3);transition:transform .2s}
+.wa-btn:hover{transform:scale(1.08)}
+.wa-btn svg{width:24px;height:24px;fill:#fff}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .page-header{padding:120px 32px 56px}
+  .filter-bar{padding:0 32px}
+  .instagram-cta,.cta-strip,.site-footer{padding-left:32px;padding-right:32px}
+  .masonry{columns:2}
+}
+@media(max-width:768px){
+  .site-header{padding:0 24px}
+  .site-nav,.header-phone{display:none}
+  .burger{display:flex}
+  .page-header{padding:100px 24px 48px}
+  .page-header-meta{text-align:left}
+  .filter-bar{padding:0 24px}
+  .masonry{columns:2;column-gap:2px}
+  .gallery-item{margin-bottom:2px}
+  .gallery-item-overlay{opacity:1;background:linear-gradient(to top,rgba(22,19,17,.7) 0%,transparent 50%)}
+  .gallery-item-tag,.gallery-item-caption{display:block}
+  .instagram-cta{flex-direction:column;padding:56px 24px;gap:28px}
+  .btn-ig{width:100%;justify-content:center}
+  .cta-strip{flex-direction:column;padding:48px 24px;gap:24px}
+  .btn-dark{width:100%;justify-content:center}
+  .site-footer{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:16px}
+  .lightbox-nav{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/">Beauty by <span>Ksenia</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/services/powder-brows/">Powder Brows</a>
+      <a href="/services/lip-blushing/">Lip Blushing</a>
+      <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+      <a href="/gallery/" class="active">Gallery</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+16469516222">+1 (646) 951‑6222</a>
+      <a class="btn-nav-book" href="/contact/">Book Now</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="/services/powder-brows/">Powder Brows</a>
+  <a href="/services/lip-blushing/">Lip Blushing</a>
+  <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+  <a href="/gallery/">Gallery</a>
+  <a href="/reviews/">Reviews</a>
+  <a href="/contact/">Contact</a>
+  <div class="mobile-nav-contact">
+    <a href="tel:+16469516222">+1 (646) 951‑6222</a>
+    <a href="https://wa.me/16469516222">WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Gallery</span>
+      </nav>
+      <h1 class="page-h1">Real <em>Results</em></h1>
+      <p style="font-size:.93rem;color:var(--muted);line-height:1.8;margin-top:16px;max-width:460px">
+        Every photo below is a real client from our Brooklyn studio. Powder brows, lip blushing, eyeliner tattoo — and the moments in between.
+      </p>
+    </div>
+    <div class="page-header-meta">
+      <span class="meta-num">100+</span>
+      <span class="meta-label">Procedures documented</span>
+    </div>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" role="navigation" aria-label="Filter gallery">
+  <div class="filter-inner">
+    <button class="filter-btn active" data-filter="all">All Work</button>
+    <button class="filter-btn" data-filter="brows">Powder Brows</button>
+    <button class="filter-btn" data-filter="lips">Lip Blushing</button>
+    <button class="filter-btn" data-filter="eyeliner">Eyeliner</button>
+    <button class="filter-btn" data-filter="process">Behind the Scenes</button>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<main class="gallery-section" id="gallery" aria-label="Photo gallery">
+  <div class="masonry" id="masonry-grid" role="list">
+
+    <!-- BROWS -->
+    <div class="gallery-item reveal" data-category="brows" data-caption="Powder Brows · Soft natural finish" role="listitem">
+      <img src="../images/bruno.jpg" alt="Powder brows result — permanent eyebrow tattoo Brooklyn NYC" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag brows">Powder Brows</span>
+        <span class="gallery-item-caption">Soft natural finish</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="brows" data-caption="Powder Brows · Defined arch" role="listitem">
+      <img src="../images/11.jpg" alt="Permanent brows close-up — microblading alternative Brooklyn" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag brows">Powder Brows</span>
+        <span class="gallery-item-caption">Defined arch</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="process" data-caption="Behind the scenes · Brow mapping" role="listitem">
+      <img src="../images/12.jpg" alt="Permanent makeup procedure — brow tattooing in Brooklyn studio" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag process">Process</span>
+        <span class="gallery-item-caption">Brow mapping & shading</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <!-- LIPS -->
+    <div class="gallery-item reveal" data-category="lips" data-caption="Lip Blushing · Rose shade" role="listitem">
+      <img src="../images/lipppfg.jpg" alt="Lip blushing procedure — permanent lip color Brooklyn NYC" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag lips">Lip Blushing</span>
+        <span class="gallery-item-caption">Rose shade</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="brows" data-caption="Powder Brows · Ombre technique" role="listitem">
+      <img src="../images/31.jpg" alt="Ombre brows result — permanent makeup eyebrows NYC" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag brows">Powder Brows</span>
+        <span class="gallery-item-caption">Ombre technique</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="process" data-caption="Behind the scenes · Pigment selection" role="listitem">
+      <img src="../images/13.jpg" alt="Permanent makeup pigments — professional lip color shades Brooklyn" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag process">Process</span>
+        <span class="gallery-item-caption">Premium pigment selection</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="eyeliner" data-caption="Permanent Eyeliner · Classic line" role="listitem">
+      <img src="../images/16.jpg" alt="Permanent eyeliner tattoo result — eyeliner tattoo Brooklyn NYC" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag eyeliner">Eyeliner</span>
+        <span class="gallery-item-caption">Classic line</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="lips" data-caption="Lip Blushing · Natural nude" role="listitem">
+      <img src="../images/18.jpg" alt="Lip blushing result — permanent lip tattoo NYC Brooklyn" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag lips">Lip Blushing</span>
+        <span class="gallery-item-caption">Natural nude</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="process" data-caption="Behind the scenes · Brow session" role="listitem">
+      <img src="../images/15.jpg" alt="Permanent makeup brow session in progress — Brooklyn studio" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag process">Process</span>
+        <span class="gallery-item-caption">Brow session in progress</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="lips" data-caption="Lip Blushing · Deep berry" role="listitem">
+      <img src="../images/29.jpg" alt="Lip tattoo result — permanent lip color Brooklyn NYC" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag lips">Lip Blushing</span>
+        <span class="gallery-item-caption">Deep berry</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+    <div class="gallery-item reveal" data-category="brows" data-caption="Powder Brows · Full & defined" role="listitem">
+      <img src="../images/30.png" alt="Powder brows before and after — permanent eyebrows Brooklyn" loading="lazy"/>
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-tag brows">Powder Brows</span>
+        <span class="gallery-item-caption">Full & defined</span>
+      </div>
+      <span class="gallery-zoom-icon">+</span>
+    </div>
+
+  </div>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lb-close" aria-label="Close">×</button>
+  <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Previous image">‹</button>
+  <img class="lightbox-img" id="lb-img" src="" alt=""/>
+  <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Next image">›</button>
+  <div class="lightbox-caption" id="lb-caption"></div>
+  <div class="lightbox-counter" id="lb-counter"></div>
+</div>
+
+<!-- INSTAGRAM CTA -->
+<div class="instagram-cta">
+  <div class="reveal">
+    <p class="ig-eyebrow">See More Work</p>
+    <h2 class="ig-headline">Follow along on <em>Instagram</em></h2>
+    <p class="ig-sub">New results posted weekly. Tag us in your photos and get featured.</p>
+  </div>
+  <a class="btn-ig reveal" href="https://www.instagram.com/grekova.probeauty/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    @grekova.probeauty
+  </a>
+</div>
+
+<!-- CTA -->
+<div class="cta-strip">
+  <div class="reveal">
+    <p class="cta-label">Like what you see?</p>
+    <p class="cta-headline">Book your session in Brooklyn</p>
+    <p class="cta-sub">$300 this month only · Powder brows · Lip blushing · Eyeliner</p>
+  </div>
+  <a class="btn-dark reveal" href="/contact/">Book Now — $300</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-logo">Beauty by <em style="font-style:italic">Ksenia</em></div>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/do-not-sell/">Do Not Sell My Data</a>
+    <a href="/blog/">Blog</a>
+    <a href="https://www.instagram.com/grekova.probeauty/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+  <p class="footer-copy">© <span id="footer-year"></span> Beauty by Ksenia. All rights reserved.</p>
+</footer>
+
+<a class="wa-btn" href="https://wa.me/16469516222" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+// Header scroll
+const hdr = document.getElementById('site-header');
+window.addEventListener('scroll',()=>{hdr.classList.toggle('scrolled',window.scrollY>40)},{passive:true});
+
+// Burger
+const burger=document.getElementById('burger');
+const mobileNav=document.getElementById('mobile-nav');
+burger.addEventListener('click',()=>{
+  const open=mobileNav.classList.toggle('open');
+  burger.classList.toggle('open',open);
+  burger.setAttribute('aria-expanded',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mobileNav.classList.remove('open');burger.classList.remove('open');
+  burger.setAttribute('aria-expanded','false');document.body.style.overflow='';
+}));
+
+// Scroll reveal
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+// Filter
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gallery-item');
+filterBtns.forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    filterBtns.forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    items.forEach(item=>{
+      item.classList.toggle('hidden', f!=='all' && item.dataset.category!==f);
+    });
+  });
+});
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lb-img');
+const lbCap    = document.getElementById('lb-caption');
+const lbCount  = document.getElementById('lb-counter');
+
+let currentIndex = 0;
+let visibleItems = [];
+
+function getVisible(){
+  return [...document.querySelectorAll('.gallery-item:not(.hidden)')];
+}
+function openLightbox(idx){
+  visibleItems = getVisible();
+  currentIndex = idx;
+  const item = visibleItems[currentIndex];
+  lbImg.src = item.querySelector('img').src;
+  lbImg.alt = item.querySelector('img').alt;
+  lbCap.textContent = item.dataset.caption || '';
+  lbCount.textContent = `${currentIndex+1} / ${visibleItems.length}`;
+  lightbox.classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow='';
+  lbImg.src='';
+}
+function navigate(dir){
+  visibleItems = getVisible();
+  currentIndex = (currentIndex + dir + visibleItems.length) % visibleItems.length;
+  const item = visibleItems[currentIndex];
+  lbImg.src = item.querySelector('img').src;
+  lbImg.alt = item.querySelector('img').alt;
+  lbCap.textContent = item.dataset.caption || '';
+  lbCount.textContent = `${currentIndex+1} / ${visibleItems.length}`;
+}
+
+items.forEach((item, i)=>{
+  item.addEventListener('click',()=>{
+    visibleItems = getVisible();
+    const vIdx = visibleItems.indexOf(item);
+    if(vIdx > -1) openLightbox(vIdx);
+  });
+});
+
+document.getElementById('lb-close').addEventListener('click', closeLightbox);
+document.getElementById('lb-prev').addEventListener('click',()=>navigate(-1));
+document.getElementById('lb-next').addEventListener('click',()=>navigate(1));
+lightbox.addEventListener('click', e=>{ if(e.target===lightbox) closeLightbox(); });
+
+document.addEventListener('keydown', e=>{
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key==='Escape') closeLightbox();
+  if(e.key==='ArrowLeft') navigate(-1);
+  if(e.key==='ArrowRight') navigate(1);
+});
+
+// Touch swipe for lightbox
+let touchStartX=0;
+lightbox.addEventListener('touchstart',e=>{touchStartX=e.touches[0].clientX},{passive:true});
+lightbox.addEventListener('touchend',e=>{
+  const dx=e.changedTouches[0].clientX-touchStartX;
+  if(Math.abs(dx)>50) navigate(dx<0?1:-1);
+});
+</script>
+
+</body>
+</html>

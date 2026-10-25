@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Powder Brows Brooklyn NYC | Microblading Alternative | Beauty by Ksenia</title>
+<meta name="description" content="Powder brows & ombre brows in Brooklyn, NYC. The best microblading alternative — longer-lasting, works on all skin types. Licensed artist, 30 years experience. $300 this month only."/>
+<meta name="keywords" content="powder brows brooklyn, microblading brooklyn, microblading near me, ombre brows nyc, nano brows brooklyn, permanent eyebrows nyc, eyebrow tattoo brooklyn, microblading nyc"/>
+
+<meta property="og:title" content="Powder Brows Brooklyn NYC | Beauty by Ksenia"/>
+<meta property="og:description" content="Powder & ombre brows by a licensed permanent makeup artist in Brooklyn. The longer-lasting microblading alternative. Book today."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="../images/11.jpg"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Powder Brows",
+  "provider": {
+    "@type": "BeautySalon",
+    "name": "Beauty by Ksenia",
+    "telephone": "+16469516222",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2102 Avenue Z",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "postalCode": "11235"
+    }
+  },
+  "description": "Powder brows permanent makeup — a longer-lasting alternative to microblading. Soft, powdery finish that works on all skin types.",
+  "offers": {
+    "@type": "Offer",
+    "price": "300",
+    "priceCurrency": "USD"
+  },
+  "areaServed": ["Brooklyn", "New York City", "Manhattan", "Queens", "New Jersey"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+
+<style>
+/* ─── TOKENS (same as index.html) ─── */
+:root {
+  --ink:      #161311;
+  --ink2:     #1f1c19;
+  --ink3:     #2a2622;
+  --warm:     #f2ece4;
+  --muted:    #7d746c;
+  --gold:     #c8a46a;
+  --gold-dim: rgba(200,164,106,.18);
+  --gold-line:rgba(200,164,106,.30);
+  --border:   rgba(200,164,106,.22);
+  --ease:     cubic-bezier(.4,0,.2,1);
+  --max:      1240px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--warm);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font:inherit}
+
+/* ─── UTILITIES ─── */
+.eyebrow{display:inline-block;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.08;color:var(--warm)}
+.section-title em{font-style:italic;color:var(--gold)}
+.gold-rule{width:40px;height:1px;background:var(--gold);margin:24px 0}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* ─── HEADER (identical to index) ─── */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  height:68px;display:flex;align-items:center;
+  padding:0 48px;
+  border-bottom:1px solid var(--border);
+  background:rgba(22,19,17,.88);
+  backdrop-filter:blur(16px);
+  transition:background .3s var(--ease);
+}
+.site-header.scrolled{background:rgba(22,19,17,.97)}
+.header-inner{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;letter-spacing:.1em;color:var(--gold);white-space:nowrap;flex-shrink:0}
+.logo span{font-style:italic}
+.site-nav{display:flex;align-items:center;gap:32px}
+.site-nav a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);opacity:.6;transition:opacity .2s;white-space:nowrap}
+.site-nav a:hover,.site-nav a.active{opacity:1}
+.site-nav a.active{color:var(--gold)}
+.header-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.header-phone{font-size:.78rem;letter-spacing:.06em;color:var(--muted);transition:color .2s}
+.header-phone:hover{color:var(--warm)}
+.btn-nav-book{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:9px 22px;transition:background .2s,color .2s;white-space:nowrap}
+.btn-nav-book:hover{background:var(--gold);color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;padding:4px;width:32px}
+.burger span{display:block;height:1px;background:var(--warm);transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:68px 0 0 0;z-index:190;background:var(--ink2);flex-direction:column;align-items:flex-start;justify-content:center;padding:48px;gap:36px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--warm);opacity:.8;transition:opacity .2s,color .2s}
+.mobile-nav a:hover{opacity:1;color:var(--gold)}
+.mobile-nav-contact{margin-top:24px;font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:10px}
+.mobile-nav-contact a{color:var(--warm)}
+
+/* ─── PAGE HERO ─── */
+.page-hero{
+  padding-top:68px;
+  min-height:88vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.page-hero-text{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:80px 56px 80px 80px;
+  position:relative;
+}
+.page-hero-text::before{
+  content:'';
+  position:absolute;left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom,transparent 0%,var(--gold) 20%,var(--gold) 80%,transparent 100%);
+}
+.breadcrumb{
+  display:flex;align-items:center;gap:8px;
+  font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:28px;
+}
+.breadcrumb a{color:var(--muted);transition:color .2s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb-sep{color:var(--border)}
+.page-hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(3rem,5vw,5.4rem);
+  font-weight:300;line-height:1.0;
+  color:var(--warm);letter-spacing:-.01em;
+}
+.page-hero h1 em{display:block;font-style:italic;color:var(--gold)}
+.page-hero-sub{
+  margin-top:24px;font-size:.95rem;line-height:1.8;
+  color:var(--muted);max-width:380px;
+}
+.hero-price-tag{
+  display:inline-flex;align-items:baseline;gap:12px;
+  margin-top:36px;
+  padding:18px 24px;
+  border:1px solid var(--border);
+  background:var(--gold-dim);
+}
+.hero-price-old{font-size:.9rem;color:var(--muted);text-decoration:line-through}
+.hero-price-new{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.4rem;font-weight:300;color:var(--gold);line-height:1;
+}
+.hero-price-note{font-size:.75rem;color:var(--muted);margin-top:4px}
+.page-hero-ctas{display:flex;align-items:center;gap:16px;margin-top:32px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);padding:16px 36px;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;transition:opacity .2s}
+.btn-primary:hover{opacity:.85}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(242,236,228,.25);color:var(--warm);padding:16px 28px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;transition:border-color .2s}
+.btn-outline:hover{border-color:var(--warm)}
+
+.page-hero-image{position:relative;overflow:hidden}
+.page-hero-image img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.75) contrast(1.06) saturate(.88)}
+.page-hero-image::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--ink) 0%,rgba(22,19,17,.35) 30%,transparent 58%)}
+
+/* ─── WHAT IS SECTION ─── */
+.what-is{
+  padding:96px 80px;
+  background:var(--ink2);
+}
+.what-is-grid{
+  max-width:var(--max);margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.what-is-body{font-size:.93rem;color:var(--muted);line-height:1.85;margin-top:18px}
+.what-is-body+.what-is-body{margin-top:14px}
+.what-is-body strong{color:var(--warm);font-weight:400}
+
+/* Comparison table */
+.compare-table{margin-top:40px;border:1px solid var(--border)}
+.compare-row{
+  display:grid;grid-template-columns:1fr 1fr 1fr;
+  border-bottom:1px solid var(--border);
+}
+.compare-row:last-child{border-bottom:none}
+.compare-cell{
+  padding:14px 18px;font-size:.82rem;line-height:1.5;
+  border-right:1px solid var(--border);
+}
+.compare-cell:last-child{border-right:none}
+.compare-header .compare-cell{
+  font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);background:var(--ink3);
+}
+.compare-cell.highlight{color:var(--gold)}
+.compare-check{color:var(--gold);font-size:1rem}
+.compare-x{color:var(--muted);font-size:.9rem}
+
+/* Process images */
+.what-is-imgs{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.what-is-imgs img{width:100%;aspect-ratio:1;object-fit:cover;filter:brightness(.8) saturate(.9)}
+
+/* ─── HOW IT WORKS ─── */
+.process{padding:96px 80px;background:var(--ink)}
+.process-inner{max-width:var(--max);margin:0 auto}
+.process-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:2px;
+  margin-top:56px;
+}
+.process-step{
+  padding:36px 28px;
+  background:var(--ink2);
+  position:relative;
+}
+.process-step::after{
+  content:'';
+  position:absolute;top:50%;right:-1px;
+  width:1px;height:40%;
+  background:var(--border);
+  transform:translateY(-50%);
+}
+.process-step:last-child::after{display:none}
+.step-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.5rem;font-weight:300;
+  color:var(--gold-dim);
+  line-height:1;margin-bottom:20px;
+  display:block;
+}
+.step-title{
+  font-size:.82rem;font-weight:500;letter-spacing:.08em;
+  color:var(--warm);margin-bottom:10px;
+  text-transform:uppercase;
+}
+.step-text{font-size:.82rem;color:var(--muted);line-height:1.7}
+
+/* ─── RESULTS GALLERY ─── */
+.results{padding:96px 0;background:var(--ink2)}
+.results-header{padding:0 80px;margin-bottom:48px}
+.results-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:3px;
+  padding:0 80px;
+}
+.result-item{overflow:hidden;position:relative}
+.result-item img{
+  width:100%;aspect-ratio:3/4;
+  object-fit:cover;
+  filter:brightness(.85) saturate(.92);
+  transition:transform .6s var(--ease),filter .4s;
+}
+.result-item:hover img{transform:scale(1.04);filter:brightness(.95) saturate(1)}
+.result-caption{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:20px 18px 16px;
+  background:linear-gradient(to top,rgba(22,19,17,.9) 0%,transparent 100%);
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ─── WHY POWDER BROWS ─── */
+.why{padding:96px 80px;background:var(--ink)}
+.why-inner{max-width:var(--max);margin:0 auto}
+.why-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2px;margin-top:56px;
+}
+.why-card{
+  padding:40px 32px;
+  background:var(--ink2);
+  border-top:2px solid transparent;
+  transition:border-color .3s;
+}
+.why-card:hover{border-color:var(--gold)}
+.why-icon{
+  font-size:1.6rem;color:var(--gold);
+  margin-bottom:20px;display:block;
+}
+.why-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.3rem;font-weight:300;color:var(--warm);
+  margin-bottom:12px;
+}
+.why-text{font-size:.83rem;color:var(--muted);line-height:1.75}
+
+/* ─── FAQ ─── */
+.faq{padding:96px 80px;background:var(--ink2)}
+.faq-inner{max-width:760px;margin:0 auto}
+.faq-list{margin-top:52px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;cursor:pointer;font-size:.95rem;color:var(--warm);list-style:none;transition:color .2s}
+.faq-summary::-webkit-details-marker{display:none}
+.faq-summary:hover{color:var(--gold)}
+details[open] .faq-summary{color:var(--gold)}
+.faq-icon{width:28px;height:28px;flex-shrink:0;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gold);transition:transform .3s var(--ease),border-color .2s}
+details[open] .faq-icon{transform:rotate(45deg);border-color:var(--gold)}
+.faq-answer{padding:0 40px 24px 0;font-size:.88rem;color:var(--muted);line-height:1.85}
+
+/* ─── CTA STRIP ─── */
+.cta-strip{
+  padding:80px;
+  background:var(--gold);
+  display:flex;align-items:center;justify-content:space-between;gap:40px;
+}
+.cta-strip-text{}
+.cta-label{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(22,19,17,.55);margin-bottom:8px}
+.cta-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;color:var(--ink);line-height:1.1}
+.cta-sub{margin-top:8px;font-size:.88rem;color:rgba(22,19,17,.65)}
+.btn-dark{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--gold);padding:18px 44px;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;transition:background .2s}
+.btn-dark:hover{background:var(--ink2)}
+
+/* ─── FOOTER ─── */
+.site-footer{border-top:1px solid var(--border);background:var(--ink);padding:36px 80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.1em;color:var(--gold)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.footer-links a:hover{color:var(--warm)}
+.footer-copy{font-size:.66rem;color:var(--muted)}
+
+/* ─── WHATSAPP ─── */
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:300;width:50px;height:50px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.3);transition:transform .2s}
+.wa-btn:hover{transform:scale(1.08)}
+.wa-btn svg{width:24px;height:24px;fill:#fff}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .what-is,.process,.results-header,.results-grid,.why,.faq,.cta-strip,.site-footer{padding-left:32px;padding-right:32px}
+  .what-is-grid{grid-template-columns:1fr;gap:48px}
+  .process-steps{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .site-header{padding:0 24px}
+  .site-nav,.header-phone{display:none}
+  .burger{display:flex}
+  .page-hero{grid-template-columns:1fr;min-height:auto}
+  .page-hero-text{padding:56px 24px 48px;order:2}
+  .page-hero-text::before{display:none}
+  .page-hero-image{height:60vw;min-height:260px;order:1}
+  .page-hero-image::after{background:linear-gradient(to top,var(--ink) 0%,transparent 50%)}
+  .what-is,.process,.why,.faq{padding:64px 24px}
+  .results-header{padding:0 24px;margin-bottom:32px}
+  .results-grid{grid-template-columns:1fr 1fr;padding:0 24px}
+  .process-steps{grid-template-columns:1fr}
+  .process-step::after{display:none}
+  .why-grid{grid-template-columns:1fr}
+  .what-is-imgs{grid-template-columns:1fr}
+  .cta-strip{flex-direction:column;padding:48px 24px;gap:28px}
+  .btn-dark{width:100%;justify-content:center}
+  .site-footer{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:16px}
+  .compare-table{overflow-x:auto}
+  .compare-row{min-width:480px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/">Beauty by <span>Ksenia</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/services/powder-brows/" class="active">Powder Brows</a>
+      <a href="/services/lip-blushing/">Lip Blushing</a>
+      <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+      <a href="/gallery/">Gallery</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+16469516222">+1 (646) 951‑6222</a>
+      <a class="btn-nav-book" href="/contact/">Book Now</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="/services/powder-brows/">Powder Brows</a>
+  <a href="/services/lip-blushing/">Lip Blushing</a>
+  <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+  <a href="/gallery/">Gallery</a>
+  <a href="/reviews/">Reviews</a>
+  <a href="/contact/">Contact</a>
+  <div class="mobile-nav-contact">
+    <a href="tel:+16469516222">+1 (646) 951‑6222</a>
+    <a href="https://wa.me/16469516222">WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-text">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/services/">Services</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Powder Brows</span>
+    </nav>
+
+    <h1>
+      Powder<br>
+      <em>Brows</em><br>
+      Brooklyn
+    </h1>
+
+    <p class="page-hero-sub">
+      The longer-lasting alternative to microblading — soft, powdery finish that works on all skin types. Wake up with perfect brows every morning.
+    </p>
+
+    <div class="hero-price-tag">
+      <div>
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="hero-price-old">$600</span>
+          <span class="hero-price-new">$300</span>
+        </div>
+        <p class="hero-price-note">This month only · Includes touch-up consultation</p>
+      </div>
+    </div>
+
+    <div class="page-hero-ctas">
+      <a class="btn-primary" href="/contact/?service=powder-brows">Book Powder Brows</a>
+      <a class="btn-outline" href="https://wa.me/16469516222?text=Hi%2C%20I%27m%20interested%20in%20powder%20brows" target="_blank" rel="noopener">Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="page-hero-image">
+    <img
+      src="../images/11.jpg"
+      alt="Powder brows permanent makeup result — microblading alternative Brooklyn NYC"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+</section>
+
+<!-- WHAT IS POWDER BROWS -->
+<section class="what-is" id="about" aria-labelledby="what-is-title">
+  <div class="what-is-grid">
+    <div class="reveal">
+      <span class="eyebrow">The Technique</span>
+      <h2 class="section-title" id="what-is-title">What are <em>Powder Brows?</em></h2>
+      <div class="gold-rule"></div>
+      <p class="what-is-body">
+        Powder brows (also called ombre brows or shading brows) are a form of permanent eyebrow makeup. Using a digital machine, tiny dots of pigment are deposited into the skin to create a soft, powdery effect — like a perfectly applied eyebrow powder.
+      </p>
+      <p class="what-is-body">
+        <strong>Looking for microblading in Brooklyn?</strong> Many clients come to us searching for microblading near me and leave with powder brows instead — because they last longer, heal more evenly, and work on all skin types including oily skin.
+      </p>
+
+      <!-- SEO comparison table — naturally embeds keywords -->
+      <div class="compare-table" role="table" aria-label="Powder brows vs microblading comparison">
+        <div class="compare-row compare-header" role="row">
+          <div class="compare-cell" role="columnheader"></div>
+          <div class="compare-cell highlight" role="columnheader">Powder Brows</div>
+          <div class="compare-cell" role="columnheader">Microblading</div>
+        </div>
+        <div class="compare-row" role="row">
+          <div class="compare-cell" role="cell">Duration</div>
+          <div class="compare-cell highlight" role="cell">1–2 years</div>
+          <div class="compare-cell" role="cell">6–12 months</div>
+        </div>
+        <div class="compare-row" role="row">
+          <div class="compare-cell" role="cell">Oily skin</div>
+          <div class="compare-cell" role="cell"><span class="compare-check">✓ Works great</span></div>
+          <div class="compare-cell" role="cell"><span class="compare-x">✗ Fades fast</span></div>
+        </div>
+        <div class="compare-row" role="row">
+          <div class="compare-cell" role="cell">Healing</div>
+          <div class="compare-cell" role="cell"><span class="compare-check">✓ Even fade</span></div>
+          <div class="compare-cell" role="cell"><span class="compare-x">✗ Can be patchy</span></div>
+        </div>
+        <div class="compare-row" role="row">
+          <div class="compare-cell" role="cell">Look</div>
+          <div class="compare-cell highlight" role="cell">Soft & powdery</div>
+          <div class="compare-cell" role="cell">Hair strokes</div>
+        </div>
+        <div class="compare-row" role="row">
+          <div class="compare-cell" role="cell">Pain level</div>
+          <div class="compare-cell" role="cell"><span class="compare-check">✓ Lower</span></div>
+          <div class="compare-cell" role="cell">Moderate</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="what-is-imgs reveal">
+      <img src="../images/11.jpg" alt="Powder brows close-up — permanent eyebrow tattoo Brooklyn" loading="lazy"/>
+      <img src="../images/12.jpg" alt="Brow shading procedure — permanent makeup artist Brooklyn NYC" loading="lazy"/>
+      <img src="../images/bruno.jpg" alt="Ombre brows result — soft powder brows NYC" loading="lazy"/>
+      <img src="../images/29.jpg" alt="Eyebrow tattoo procedure in Brooklyn studio" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="process-inner">
+    <div class="reveal">
+      <span class="eyebrow">The Process</span>
+      <h2 class="section-title" id="process-title">How It <em>Works</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <span class="step-num">01</span>
+        <p class="step-title">Consultation</p>
+        <p class="step-text">We discuss your desired shape, color, and thickness. I map the perfect brow outline for your facial structure.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">02</span>
+        <p class="step-title">Numbing</p>
+        <p class="step-text">A professional topical numbing cream is applied for 20–30 minutes so the procedure is as comfortable as possible.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">03</span>
+        <p class="step-title">Procedure</p>
+        <p class="step-text">Using a digital machine, pigment is deposited in a soft shading technique. The session takes approximately 2 hours.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">04</span>
+        <p class="step-title">Healing & Touch-up</p>
+        <p class="step-text">Brows heal over 4–6 weeks. A complimentary touch-up appointment is included to perfect the final result.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results" aria-labelledby="results-title">
+  <div class="results-header reveal">
+    <span class="eyebrow">Before & After</span>
+    <h2 class="section-title" id="results-title">Real <em>Results</em></h2>
+  </div>
+  <div class="results-grid">
+    <div class="result-item reveal">
+      <img src="../images/11.jpg" alt="Powder brows result Brooklyn — permanent eyebrows before and after" loading="lazy"/>
+      <div class="result-caption">Powder Brows · Soft finish</div>
+    </div>
+    <div class="result-item reveal">
+      <img src="../images/bruno.jpg" alt="Ombre brows NYC — permanent makeup eyebrows result" loading="lazy"/>
+      <div class="result-caption">Ombre Brows · Natural shape</div>
+    </div>
+    <div class="result-item reveal">
+      <img src="../images/31.jpg" alt="Nano brows Brooklyn — microblading alternative result" loading="lazy"/>
+      <div class="result-caption">Nano Brows · Hair-stroke detail</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY POWDER BROWS -->
+<section class="why" id="why" aria-labelledby="why-title">
+  <div class="why-inner">
+    <div class="reveal">
+      <span class="eyebrow">Why Choose Powder Brows</span>
+      <h2 class="section-title" id="why-title">Benefits That <em>Last</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <span class="why-icon">⧖</span>
+        <p class="why-title">Lasts 1–2 Years</p>
+        <p class="why-text">Powder brows outlast microblading by up to a year. Fewer touch-ups means more savings and less time in the chair.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">◈</span>
+        <p class="why-title">All Skin Types</p>
+        <p class="why-text">Unlike microblading, powder brows work beautifully on oily, combination, and mature skin. Everyone can enjoy perfect brows.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">✦</span>
+        <p class="why-title">Natural, Soft Finish</p>
+        <p class="why-text">The healed result looks like perfectly applied brow powder — defined but never harsh. Natural from across the room.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">◎</span>
+        <p class="why-title">Even Healing</p>
+        <p class="why-text">Powder shading heals more evenly than hair strokes. Less patchiness, more consistent color retention.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">♦</span>
+        <p class="why-title">Wake Up Ready</p>
+        <p class="why-text">No more filling in brows every morning. Your brows look polished from the moment you open your eyes.</p>
+      </div>
+      <div class="why-card reveal">
+        <span class="why-icon">❋</span>
+        <p class="why-title">30 Years of Craft</p>
+        <p class="why-text">Ksenia has over 30 years of experience in permanent makeup. Your brows are shaped by genuine expertise, not a training certificate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ — powder brows specific -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="faq-inner">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title" id="faq-title">Powder Brows <em>Questions</em></h2>
+    </div>
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How is powder brows different from microblading?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Microblading uses a hand tool to create hair-like strokes by cutting into the skin. Powder brows use a digital machine to deposit tiny dots of pigment, creating a soft powdery effect. Powder brows last longer (1–2 years vs 6–12 months), heal more evenly, and work on all skin types — especially oily skin where microblading tends to fade quickly.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How long do powder brows last?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Powder brows typically last 1 to 2 years depending on your skin type, lifestyle, and sun exposure. Oily skin and frequent sun exposure may cause faster fading. A touch-up at 12–18 months keeps everything looking fresh.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">Do powder brows hurt?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Most clients are surprised at how comfortable the procedure is. We apply a professional numbing cream before the session, and the machine creates less trauma to the skin compared to microblading. Most people rate the discomfort at 2–3 out of 10.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How much do powder brows cost in Brooklyn?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Our powder brows service is $300 this month (normally $600). This includes the full procedure and a follow-up touch-up consultation at 4–6 weeks. No hidden fees.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How do I prepare for powder brows?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Avoid alcohol, blood thinners, and retinol products for 48 hours before your appointment. Don't work out the morning of your session. Come with your natural brows — no need to fill them in. Bring reference photos if you have a shape in mind. We'll map everything together during the consultation.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">Can I get powder brows if I already have microblading?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Yes, in most cases. If your existing microblading has faded sufficiently, powder brows can be applied over or around the strokes to refresh and improve the result. We'll assess your brows during a free consultation before booking.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <div class="cta-strip-text reveal">
+    <p class="cta-label">Ready to wake up with perfect brows?</p>
+    <p class="cta-headline">Book your powder brows<br>session in Brooklyn</p>
+    <p class="cta-sub">$300 this month only · Licensed artist · 30 years experience</p>
+  </div>
+  <a class="btn-dark reveal" href="/contact/?service=powder-brows">Book Now — $300</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-logo">Beauty by <em style="font-style:italic">Ksenia</em></div>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/do-not-sell/">Do Not Sell My Data</a>
+    <a href="/blog/">Blog</a>
+    <a href="https://www.instagram.com/grekova.probeauty/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+  <p class="footer-copy">© <span id="footer-year"></span> Beauty by Ksenia. All rights reserved.</p>
+</footer>
+
+<!-- WhatsApp -->
+<a class="wa-btn" href="https://wa.me/16469516222" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+const hdr = document.getElementById('site-header');
+window.addEventListener('scroll', () => { hdr.classList.toggle('scrolled', window.scrollY > 40); }, {passive:true});
+const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobile-nav');
+burger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  mobileNav.classList.remove('open');
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}));
+const ro = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)} });
+}, {threshold:.1});
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
+
+</body>
+</html>

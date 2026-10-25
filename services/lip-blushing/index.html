@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Lip Blushing NYC & Brooklyn | Permanent Lip Color | Beauty by Ksenia</title>
+<meta name="description" content="Lip blushing & permanent lip color in Brooklyn, NYC. Natural-looking lip tattoo that enhances shape and adds color. Licensed artist, 30 years experience. $300 this month only."/>
+<meta name="keywords" content="lip blushing nyc, lip blushing brooklyn, lip tattoo near me, permanent lip color, lip neutralization nyc, lip blush nyc, what is lip blushing, permanent makeup lips brooklyn"/>
+
+<meta property="og:title" content="Lip Blushing NYC & Brooklyn | Beauty by Ksenia"/>
+<meta property="og:description" content="Lip blushing & permanent lip color by a licensed permanent makeup artist in Brooklyn. Natural lip enhancement that lasts 1–2 years."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="../images/lipppfg.jpg"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Lip Blushing",
+  "provider": {
+    "@type": "BeautySalon",
+    "name": "Beauty by Ksenia",
+    "telephone": "+16469516222",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2102 Avenue Z",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "postalCode": "11235"
+    }
+  },
+  "description": "Lip blushing — permanent lip color and shape enhancement. Natural-looking results that last 1–2 years.",
+  "offers": {
+    "@type": "Offer",
+    "price": "300",
+    "priceCurrency": "USD"
+  },
+  "areaServed": ["Brooklyn", "New York City", "Manhattan", "Queens", "New Jersey"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet"/>
+
+<style>
+:root {
+  --ink:      #161311;
+  --ink2:     #1f1c19;
+  --ink3:     #2a2622;
+  --warm:     #f2ece4;
+  --muted:    #7d746c;
+  --gold:     #c8a46a;
+  --gold-dim: rgba(200,164,106,.18);
+  --gold-line:rgba(200,164,106,.30);
+  --border:   rgba(200,164,106,.22);
+  --rose:     #b8706a;
+  --rose-dim: rgba(184,112,106,.15);
+  --ease:     cubic-bezier(.4,0,.2,1);
+  --max:      1240px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--warm);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font:inherit}
+
+.eyebrow{display:inline-block;font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;line-height:1.08;color:var(--warm)}
+.section-title em{font-style:italic;color:var(--gold)}
+.gold-rule{width:40px;height:1px;background:var(--gold);margin:24px 0}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+/* ─── HEADER ─── */
+.site-header{position:fixed;top:0;left:0;right:0;z-index:200;height:68px;display:flex;align-items:center;padding:0 48px;border-bottom:1px solid var(--border);background:rgba(22,19,17,.88);backdrop-filter:blur(16px);transition:background .3s var(--ease)}
+.site-header.scrolled{background:rgba(22,19,17,.97)}
+.header-inner{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:400;letter-spacing:.1em;color:var(--gold);white-space:nowrap;flex-shrink:0}
+.logo span{font-style:italic}
+.site-nav{display:flex;align-items:center;gap:32px}
+.site-nav a{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--warm);opacity:.6;transition:opacity .2s;white-space:nowrap}
+.site-nav a:hover,.site-nav a.active{opacity:1}
+.site-nav a.active{color:var(--gold)}
+.header-actions{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.header-phone{font-size:.78rem;letter-spacing:.06em;color:var(--muted);transition:color .2s}
+.header-phone:hover{color:var(--warm)}
+.btn-nav-book{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold);padding:9px 22px;transition:background .2s,color .2s;white-space:nowrap}
+.btn-nav-book:hover{background:var(--gold);color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;padding:4px;width:32px}
+.burger span{display:block;height:1px;background:var(--warm);transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:68px 0 0 0;z-index:190;background:var(--ink2);flex-direction:column;align-items:flex-start;justify-content:center;padding:48px;gap:36px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--warm);opacity:.8;transition:opacity .2s,color .2s}
+.mobile-nav a:hover{opacity:1;color:var(--gold)}
+.mobile-nav-contact{margin-top:24px;font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:10px}
+.mobile-nav-contact a{color:var(--warm)}
+
+/* ─── PAGE HERO — rose accent for lips page ─── */
+.page-hero{
+  padding-top:68px;
+  min-height:88vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.page-hero-text{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:80px 56px 80px 80px;
+  position:relative;
+}
+/* Rose-tinted vertical line — differentiates lips page from brows */
+.page-hero-text::before{
+  content:'';
+  position:absolute;left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(to bottom,transparent 0%,var(--rose) 20%,var(--rose) 80%,transparent 100%);
+}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
+.breadcrumb a{color:var(--muted);transition:color .2s}
+.breadcrumb a:hover{color:var(--gold)}
+.breadcrumb-sep{color:var(--border)}
+.page-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,5vw,5.4rem);font-weight:300;line-height:1.0;color:var(--warm);letter-spacing:-.01em}
+.page-hero h1 em{display:block;font-style:italic;color:var(--rose)}
+.page-hero-sub{margin-top:24px;font-size:.95rem;line-height:1.8;color:var(--muted);max-width:380px}
+.hero-price-tag{display:inline-flex;align-items:center;gap:16px;margin-top:36px;padding:18px 24px;border:1px solid var(--border);background:var(--rose-dim)}
+.hero-price-old{font-size:.9rem;color:var(--muted);text-decoration:line-through}
+.hero-price-new{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--rose);line-height:1}
+.hero-price-note{font-size:.75rem;color:var(--muted);margin-top:4px}
+.page-hero-ctas{display:flex;align-items:center;gap:16px;margin-top:32px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--ink);padding:16px 36px;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;transition:opacity .2s}
+.btn-primary:hover{opacity:.85}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(242,236,228,.25);color:var(--warm);padding:16px 28px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;transition:border-color .2s}
+.btn-outline:hover{border-color:var(--warm)}
+.page-hero-image{position:relative;overflow:hidden}
+.page-hero-image img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.72) contrast(1.08) saturate(.9)}
+.page-hero-image::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--ink) 0%,rgba(22,19,17,.3) 30%,transparent 58%)}
+
+/* ─── WHAT IS LIP BLUSHING ─── */
+.what-is{padding:96px 80px;background:var(--ink2)}
+.what-is-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.what-is-body{font-size:.93rem;color:var(--muted);line-height:1.85;margin-top:18px}
+.what-is-body+.what-is-body{margin-top:14px}
+.what-is-body strong{color:var(--warm);font-weight:400}
+
+/* Shades palette — signature element for this page */
+.shades-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:3px;
+  margin-top:36px;
+}
+.shade{
+  aspect-ratio:1;
+  position:relative;
+  overflow:hidden;
+  cursor:default;
+}
+.shade-swatch{width:100%;height:70%;transition:height .3s var(--ease)}
+.shade:hover .shade-swatch{height:80%}
+.shade-name{
+  padding:8px 10px;
+  font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);background:var(--ink3);
+  height:30%;display:flex;align-items:center;
+}
+/* Shade colors */
+.shade-nude .shade-swatch{background:#c49080}
+.shade-rose .shade-swatch{background:#b8706a}
+.shade-berry .shade-swatch{background:#8b4a5c}
+.shade-coral .shade-swatch{background:#c47860}
+
+/* What's included list */
+.includes-list{margin-top:36px;display:flex;flex-direction:column;gap:14px}
+.include-item{display:flex;align-items:flex-start;gap:14px;font-size:.88rem;color:var(--muted);line-height:1.6}
+.include-icon{color:var(--rose);flex-shrink:0;margin-top:2px;font-size:.9rem}
+.include-item strong{color:var(--warm);font-weight:400}
+
+/* Image stack */
+.lips-imgs{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.lips-imgs img{width:100%;object-fit:cover;filter:brightness(.82) saturate(.9)}
+.lips-imgs img:first-child{aspect-ratio:2/3;grid-row:span 2}
+.lips-imgs img:not(:first-child){aspect-ratio:1}
+
+/* ─── WHO IS IT FOR ─── */
+.for-whom{padding:96px 80px;background:var(--ink)}
+.for-whom-inner{max-width:var(--max);margin:0 auto}
+.for-whom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px}
+.for-card{
+  padding:40px 32px;background:var(--ink2);
+  border-top:2px solid transparent;transition:border-color .3s;
+}
+.for-card:hover{border-color:var(--rose)}
+.for-icon{font-size:1.5rem;color:var(--rose);margin-bottom:18px;display:block}
+.for-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--warm);margin-bottom:10px}
+.for-text{font-size:.83rem;color:var(--muted);line-height:1.75}
+
+/* ─── PROCESS ─── */
+.process{padding:96px 80px;background:var(--ink2)}
+.process-inner{max-width:var(--max);margin:0 auto}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px}
+.process-step{padding:36px 28px;background:var(--ink3);position:relative}
+.process-step::after{content:'';position:absolute;top:50%;right:-1px;width:1px;height:40%;background:var(--border);transform:translateY(-50%)}
+.process-step:last-child::after{display:none}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--gold-dim);line-height:1;margin-bottom:20px;display:block}
+.step-title{font-size:.82rem;font-weight:500;letter-spacing:.08em;color:var(--warm);margin-bottom:10px;text-transform:uppercase}
+.step-text{font-size:.82rem;color:var(--muted);line-height:1.7}
+
+/* ─── RESULTS GALLERY ─── */
+.results{padding:96px 0;background:var(--ink)}
+.results-header{padding:0 80px;margin-bottom:48px}
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:0 80px}
+.result-item{overflow:hidden;position:relative}
+.result-item img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:brightness(.82) saturate(.9);transition:transform .6s var(--ease),filter .4s}
+.result-item:hover img{transform:scale(1.04);filter:brightness(.95) saturate(1.05)}
+.result-caption{position:absolute;bottom:0;left:0;right:0;padding:20px 18px 16px;background:linear-gradient(to top,rgba(22,19,17,.9) 0%,transparent 100%);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* ─── NEUTRALIZATION callout ─── */
+.neutralization{
+  padding:80px;
+  background:var(--ink2);
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+.neutralization-inner{
+  max-width:900px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.neutralization-badge{
+  display:inline-block;
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--rose);border:1px solid var(--rose);
+  padding:6px 14px;margin-bottom:20px;
+}
+.neutralization-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:300;line-height:1.1;color:var(--warm)}
+.neutralization-title em{font-style:italic;color:var(--rose)}
+.neutralization-body{font-size:.88rem;color:var(--muted);line-height:1.85;margin-top:18px}
+.neutralization-img img{width:100%;aspect-ratio:4/3;object-fit:cover;filter:brightness(.8) saturate(.9)}
+
+/* ─── FAQ ─── */
+.faq{padding:96px 80px;background:var(--ink)}
+.faq-inner{max-width:760px;margin:0 auto}
+.faq-list{margin-top:52px}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px 0;cursor:pointer;font-size:.95rem;color:var(--warm);list-style:none;transition:color .2s}
+.faq-summary::-webkit-details-marker{display:none}
+.faq-summary:hover{color:var(--gold)}
+details[open] .faq-summary{color:var(--gold)}
+.faq-icon{width:28px;height:28px;flex-shrink:0;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gold);transition:transform .3s var(--ease),border-color .2s}
+details[open] .faq-icon{transform:rotate(45deg);border-color:var(--gold)}
+.faq-answer{padding:0 40px 24px 0;font-size:.88rem;color:var(--muted);line-height:1.85}
+
+/* ─── CTA ─── */
+.cta-strip{padding:80px;background:var(--rose);display:flex;align-items:center;justify-content:space-between;gap:40px}
+.cta-label{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(22,19,17,.55);margin-bottom:8px}
+.cta-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;color:var(--ink);line-height:1.1}
+.cta-sub{margin-top:8px;font-size:.88rem;color:rgba(22,19,17,.65)}
+.btn-dark{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--warm);padding:18px 44px;font-size:.78rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;transition:background .2s}
+.btn-dark:hover{background:var(--ink2)}
+
+/* ─── FOOTER ─── */
+.site-footer{border-top:1px solid var(--border);background:var(--ink);padding:36px 80px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1rem;letter-spacing:.1em;color:var(--gold)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);transition:color .2s}
+.footer-links a:hover{color:var(--warm)}
+.footer-copy{font-size:.66rem;color:var(--muted)}
+.wa-btn{position:fixed;bottom:28px;right:28px;z-index:300;width:50px;height:50px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.3);transition:transform .2s}
+.wa-btn:hover{transform:scale(1.08)}
+.wa-btn svg{width:24px;height:24px;fill:#fff}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:1024px){
+  .what-is,.for-whom,.process,.faq,.cta-strip,.neutralization,.site-footer{padding-left:32px;padding-right:32px}
+  .results-header,.results-grid{padding-left:32px;padding-right:32px}
+  .what-is-grid,.neutralization-inner{grid-template-columns:1fr;gap:48px}
+  .for-whom-grid{grid-template-columns:1fr 1fr}
+  .process-steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .site-header{padding:0 24px}
+  .site-nav,.header-phone{display:none}
+  .burger{display:flex}
+  .page-hero{grid-template-columns:1fr;min-height:auto}
+  .page-hero-text{padding:56px 24px 48px;order:2}
+  .page-hero-text::before{display:none}
+  .page-hero-image{height:60vw;min-height:260px;order:1}
+  .page-hero-image::after{background:linear-gradient(to top,var(--ink) 0%,transparent 50%)}
+  .what-is,.for-whom,.process,.faq,.neutralization{padding:64px 24px}
+  .results-header{padding:0 24px}
+  .results-grid{grid-template-columns:1fr 1fr;padding:0 24px}
+  .for-whom-grid,.process-steps{grid-template-columns:1fr}
+  .process-step::after{display:none}
+  .shades-grid{grid-template-columns:repeat(2,1fr)}
+  .lips-imgs{grid-template-columns:1fr}
+  .lips-imgs img:first-child{grid-row:auto;aspect-ratio:4/3}
+  .cta-strip{flex-direction:column;padding:48px 24px;gap:28px}
+  .btn-dark{width:100%;justify-content:center}
+  .site-footer{padding:28px 24px;flex-direction:column;align-items:flex-start;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/">Beauty by <span>Ksenia</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/services/powder-brows/">Powder Brows</a>
+      <a href="/services/lip-blushing/" class="active">Lip Blushing</a>
+      <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+      <a href="/gallery/">Gallery</a>
+      <a href="/reviews/">Reviews</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:+16469516222">+1 (646) 951‑6222</a>
+      <a class="btn-nav-book" href="/contact/">Book Now</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="/services/powder-brows/">Powder Brows</a>
+  <a href="/services/lip-blushing/">Lip Blushing</a>
+  <a href="/services/eyeliner-tattoo/">Eyeliner</a>
+  <a href="/gallery/">Gallery</a>
+  <a href="/reviews/">Reviews</a>
+  <a href="/contact/">Contact</a>
+  <div class="mobile-nav-contact">
+    <a href="tel:+16469516222">+1 (646) 951‑6222</a>
+    <a href="https://wa.me/16469516222">WhatsApp</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-text">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <a href="/services/">Services</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Lip Blushing</span>
+    </nav>
+
+    <h1>
+      Lip<br>
+      <em>Blushing</em><br>
+      NYC
+    </h1>
+
+    <p class="page-hero-sub">
+      Permanent lip color that enhances your natural shape, adds definition, and gives you fuller-looking lips — without filler. Wake up with beautiful lips every day.
+    </p>
+
+    <div class="hero-price-tag">
+      <div>
+        <div style="display:flex;align-items:baseline;gap:12px">
+          <span class="hero-price-old">$600</span>
+          <span class="hero-price-new">$300</span>
+        </div>
+        <p class="hero-price-note">This month only · Includes touch-up consultation</p>
+      </div>
+    </div>
+
+    <div class="page-hero-ctas">
+      <a class="btn-primary" href="/contact/?service=lip-blushing">Book Lip Blushing</a>
+      <a class="btn-outline" href="https://wa.me/16469516222?text=Hi%2C%20I%27m%20interested%20in%20lip%20blushing" target="_blank" rel="noopener">Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="page-hero-image">
+    <img
+      src="../images/lipppfg.jpg"
+      alt="Lip blushing procedure — permanent lip color NYC Brooklyn studio"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+</section>
+
+<!-- WHAT IS LIP BLUSHING -->
+<section class="what-is" id="about" aria-labelledby="what-is-title">
+  <div class="what-is-grid">
+    <div class="reveal">
+      <span class="eyebrow">The Technique</span>
+      <h2 class="section-title" id="what-is-title">What is <em>Lip Blushing?</em></h2>
+      <div class="gold-rule"></div>
+      <p class="what-is-body">
+        Lip blushing is a form of permanent makeup that deposits soft pigment into your lips to enhance their natural color, shape, and definition. The result looks like your lips — but better. Fuller, more symmetrical, with a natural flush of color.
+      </p>
+      <p class="what-is-body">
+        Unlike lip fillers, <strong>lip blushing doesn't add volume</strong> — it enhances what you already have. It's the perfect solution if you want to even out discoloration, define your lip border, or simply wake up with beautiful lips without reaching for lipstick.
+      </p>
+
+      <!-- Shade palette — unique element for this page -->
+      <p style="font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:36px;margin-bottom:12px">Available Shades</p>
+      <div class="shades-grid" aria-label="Lip blushing color options">
+        <div class="shade">
+          <div class="shade-swatch shade-nude"></div>
+          <div class="shade-name">Nude</div>
+        </div>
+        <div class="shade">
+          <div class="shade-swatch shade-rose"></div>
+          <div class="shade-name">Rose</div>
+        </div>
+        <div class="shade">
+          <div class="shade-swatch shade-berry"></div>
+          <div class="shade-name">Berry</div>
+        </div>
+        <div class="shade">
+          <div class="shade-swatch shade-coral"></div>
+          <div class="shade-name">Coral</div>
+        </div>
+      </div>
+      <p style="font-size:.75rem;color:var(--muted);margin-top:10px">Custom shades available — we'll match to your natural tone at consultation.</p>
+
+      <div class="includes-list" style="margin-top:32px">
+        <div class="include-item">
+          <span class="include-icon">✦</span>
+          <span><strong>Shape design</strong> — lip border mapping for perfect symmetry</span>
+        </div>
+        <div class="include-item">
+          <span class="include-icon">✦</span>
+          <span><strong>Color consultation</strong> — custom shade mixed for your skin tone</span>
+        </div>
+        <div class="include-item">
+          <span class="include-icon">✦</span>
+          <span><strong>Touch-up included</strong> — complimentary follow-up at 4–6 weeks</span>
+        </div>
+        <div class="include-item">
+          <span class="include-icon">✦</span>
+          <span><strong>Aftercare kit</strong> — everything you need for healing at home</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lips-imgs reveal">
+      <img src="../images/18.jpg" alt="Lip blushing result — permanent lip color Brooklyn NYC" loading="lazy"/>
+      <img src="../images/lipppfg.jpg" alt="Lip tattoo procedure close-up NYC" loading="lazy"/>
+      <img src="../images/31.jpg" alt="Permanent lip color healed result Brooklyn" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS IT FOR -->
+<section class="for-whom" id="for-whom" aria-labelledby="for-whom-title">
+  <div class="for-whom-inner">
+    <div class="reveal">
+      <span class="eyebrow">Is This Right For You?</span>
+      <h2 class="section-title" id="for-whom-title">Who Gets <em>Lip Blushing</em></h2>
+    </div>
+    <div class="for-whom-grid">
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Uneven lips</p>
+        <p class="for-text">If your lips are asymmetrical or one side is thinner, lip blushing creates a perfectly balanced border that looks completely natural.</p>
+      </div>
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Pale or undefined lips</p>
+        <p class="for-text">If your lips lack natural color or definition, blushing adds a soft flush — from barely-there nude to a deeper rose, your choice.</p>
+      </div>
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Tired of lipstick</p>
+        <p class="for-text">Wake up, work out, swim — your lip color stays put. No more reapplying, bleeding borders, or starting the day without color.</p>
+      </div>
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Post-filler maintenance</p>
+        <p class="for-text">Many filler clients add lip blushing to enhance the color and definition that volume alone doesn't provide.</p>
+      </div>
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Lip discoloration</p>
+        <p class="for-text">Dark or uneven pigmentation — from sun, smoking, or genetics — can be corrected and evened out with our lip neutralization technique.</p>
+      </div>
+      <div class="for-card reveal">
+        <span class="for-icon">◈</span>
+        <p class="for-title">Minimal makeup lovers</p>
+        <p class="for-text">You want to look put-together with zero effort. Lip blushing is the ultimate low-maintenance beauty investment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process" aria-labelledby="process-title">
+  <div class="process-inner">
+    <div class="reveal">
+      <span class="eyebrow">The Process</span>
+      <h2 class="section-title" id="process-title">How It <em>Works</em></h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <span class="step-num">01</span>
+        <p class="step-title">Consultation</p>
+        <p class="step-text">We discuss your goals, select the perfect shade together, and map the lip shape. No two lip designs are the same.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">02</span>
+        <p class="step-title">Numbing</p>
+        <p class="step-text">A strong topical numbing cream is applied to your lips for 30 minutes. Most clients are surprised by how comfortable the procedure feels.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">03</span>
+        <p class="step-title">Procedure</p>
+        <p class="step-text">Pigment is applied in soft, layered passes using a digital machine. The full session takes approximately 2–2.5 hours.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="step-num">04</span>
+        <p class="step-title">Healing</p>
+        <p class="step-text">Lips heal in 7–14 days. The color softens to its true shade at week 4–6. A touch-up session is included to perfect the result.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results" id="results" aria-labelledby="results-title">
+  <div class="results-header reveal">
+    <span class="eyebrow">Portfolio</span>
+    <h2 class="section-title" id="results-title">Lip Blushing <em>Results</em></h2>
+  </div>
+  <div class="results-grid">
+    <div class="result-item reveal">
+      <img src="../images/lipppfg.jpg" alt="Lip blushing NYC — permanent lip color before and after" loading="lazy"/>
+      <div class="result-caption">Lip Blushing · Rose shade</div>
+    </div>
+    <div class="result-item reveal">
+      <img src="../images/18.jpg" alt="Lip tattoo Brooklyn — permanent makeup lips result" loading="lazy"/>
+      <div class="result-caption">Lip Blush · Natural nude</div>
+    </div>
+    <div class="result-item reveal">
+      <img src="../images/31.jpg" alt="Permanent lip color NYC — lip blushing healed result" loading="lazy"/>
+      <div class="result-caption">Full lip color · Berry</div>
+    </div>
+  </div>
+</section>
+
+<!-- LIP NEUTRALIZATION CALLOUT -->
+<!-- SEO: "lip neutralization nyc" had 1 conversion, "lip neutralization" had 1 conversion in Ads data -->
+<div class="neutralization" id="neutralization">
+  <div class="neutralization-inner">
+    <div class="reveal">
+      <span class="neutralization-badge">Also Available</span>
+      <h2 class="neutralization-title">Lip <em>Neutralization</em> NYC</h2>
+      <p class="neutralization-body">
+        If your lips have dark pigmentation — from sun exposure, smoking, or natural discoloration — lip neutralization is the solution. We use corrective pigments to neutralize dark tones before applying your chosen shade, resulting in an even, balanced color.
+      </p>
+      <p class="neutralization-body" style="margin-top:14px">
+        Many clients searching for <strong style="color:var(--warm);font-weight:400">lip neutralization in NYC</strong> come to our Brooklyn studio — we're easily accessible from Manhattan, Queens, and New Jersey.
+      </p>
+      <a class="btn-outline" href="/contact/?service=lip-blushing" style="margin-top:28px;display:inline-flex">Ask About Neutralization</a>
+    </div>
+    <div class="neutralization-img reveal">
+      <img src="../images/13.jpg" alt="Lip neutralization NYC — corrective permanent lip color Brooklyn" loading="lazy"/>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq" aria-labelledby="faq-title">
+  <div class="faq-inner">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title" id="faq-title">Lip Blushing <em>Questions</em></h2>
+    </div>
+    <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">What is lip blushing and how is it different from lip tattoo?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Lip blushing is a modern, softer form of lip tattooing. Traditional lip tattoos used heavy ink and created very bold, opaque results. Lip blushing uses semi-permanent pigments applied with a lightweight technique to create a natural, sheer flush of color — like your lips on a good day. The result fades gradually and can be refreshed over time.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How long does lip blushing last?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Lip blushing typically lasts 1 to 2 years. Factors like sun exposure, the products you use on your lips, and your skin's natural cell turnover affect longevity. A touch-up session at 12–18 months keeps the color looking fresh.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">Does lip blushing hurt?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">We apply a strong numbing cream before the procedure, and re-apply during the session as needed. Most clients find the lips easier to numb than brows. Discomfort is usually minimal — many clients fall asleep during the procedure.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">Can I get lip blushing if I've had fillers?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Yes — but we recommend waiting at least 4 weeks after any filler injection before getting lip blushing. If you plan to get fillers after lip blushing, wait at least 2 weeks. We'll discuss your full treatment history during the consultation.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">How much does lip blushing cost in NYC?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Our lip blushing service is $300 this month (normally $600). This includes the full procedure, custom shade mixing, and a follow-up touch-up appointment at 4–6 weeks. No hidden costs.</p>
+        </div>
+      </details>
+
+      <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <summary class="faq-summary">
+          <span itemprop="name">What's the healing process like?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">Immediately after the procedure, lips will look darker and feel slightly swollen — this is normal. Over days 3–7 the color will peel and appear very light. By week 4–6 the true healed color settles in. We provide a full aftercare kit and instructions to ensure the best result.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP — rose background for lips page -->
+<div class="cta-strip">
+  <div class="reveal">
+    <p class="cta-label">Wake up with beautiful lips</p>
+    <p class="cta-headline">Book lip blushing in<br>Brooklyn, NYC</p>
+    <p class="cta-sub">$300 this month only · Licensed artist · 30 years experience</p>
+  </div>
+  <a class="btn-dark reveal" href="/contact/?service=lip-blushing">Book Now — $300</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-logo">Beauty by <em style="font-style:italic">Ksenia</em></div>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/do-not-sell/">Do Not Sell My Data</a>
+    <a href="/blog/">Blog</a>
+    <a href="https://www.instagram.com/grekova.probeauty/" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+  <p class="footer-copy">© <span id="footer-year"></span> Beauty by Ksenia. All rights reserved.</p>
+</footer>
+
+<a class="wa-btn" href="https://wa.me/16469516222" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+const hdr = document.getElementById('site-header');
+window.addEventListener('scroll',()=>{hdr.classList.toggle('scrolled',window.scrollY>40)},{passive:true});
+const burger=document.getElementById('burger');
+const mobileNav=document.getElementById('mobile-nav');
+burger.addEventListener('click',()=>{
+  const open=mobileNav.classList.toggle('open');
+  burger.classList.toggle('open',open);
+  burger.setAttribute('aria-expanded',open);
+  document.body.style.overflow=open?'hidden':'';
+});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mobileNav.classList.remove('open');burger.classList.remove('open');
+  burger.setAttribute('aria-expanded','false');document.body.style.overflow='';
+}));
+const ro=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+</script>
+
+</body>
+</html>
