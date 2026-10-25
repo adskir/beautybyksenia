@@ -468,8 +468,10 @@ button{cursor:pointer;border:none;background:none;font:inherit}
         <h2 class="form-title">Send a <em>Request</em></h2>
         <p class="form-subtitle">We'll confirm your slot within 24 hours. No payment required to book.</p>
 
-        <form id="contact-form" action="/send.php" method="POST" novalidate>
-        <input type="text" name="website" value="" style="display:none!important" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <form id="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New booking request — beautybyksenia.com (Contact page)">
+        <input type="hidden" name="page" value="contact/index.html">
+        <input type="text" name="_gotcha" value="" style="display:none!important" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="form-row-2">
             <div>
@@ -634,6 +636,15 @@ const formSuccess = document.getElementById('form-success');
 form.addEventListener('submit', async function(e){
   e.preventDefault();
   if(!form.checkValidity()){ form.reportValidity(); return; }
+  // US phone check: 10 digits, or 11 starting with 1
+  var phoneEl = form.querySelector('[name="phone"]');
+  var digits = (phoneEl.value || '').replace(/\D/g, '');
+  if (!(digits.length === 10 || (digits.length === 11 && digits[0] === '1'))) {
+    phoneEl.setCustomValidity('Please enter a valid US phone number, e.g. (646) 555-1234');
+    phoneEl.reportValidity();
+    phoneEl.addEventListener('input', function(){ phoneEl.setCustomValidity(''); }, { once: true });
+    return;
+  }
   if(!serviceInput.value){
     alert('Please select a service.');
     return;

@@ -1361,8 +1361,10 @@ details[open] .faq-icon{transform:rotate(45deg);border-color:var(--gold)}
 
     <div class="contact-form-wrap reveal">
       <p class="form-tagline">Wake up with <em>Makeup</em></p>
-      <form id="contact-form" action="/send.php" method="POST" novalidate>
-        <input type="text" name="website" value="" style="display:none!important" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <form id="contact-form" action="https://formspree.io/f/FORMSPREE_ID" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New booking request — beautybyksenia.com">
+        <input type="hidden" name="page" value="index.html">
+        <input type="text" name="_gotcha" value="" style="display:none!important" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <label class="form-label" for="f-name">Your Name</label>
           <input class="form-input" id="f-name" name="name" type="text" required autocomplete="name"/>
@@ -1455,6 +1457,15 @@ const submitBtn = document.getElementById('form-submit-btn');
 form.addEventListener('submit', async function(e) {
   e.preventDefault();
   if (!form.checkValidity()) { form.reportValidity(); return; }
+  // US phone check: 10 digits, or 11 starting with 1
+  var phoneEl = form.querySelector('[name="phone"]');
+  var digits = (phoneEl.value || '').replace(/\D/g, '');
+  if (!(digits.length === 10 || (digits.length === 11 && digits[0] === '1'))) {
+    phoneEl.setCustomValidity('Please enter a valid US phone number, e.g. (646) 555-1234');
+    phoneEl.reportValidity();
+    phoneEl.addEventListener('input', function(){ phoneEl.setCustomValidity(''); }, { once: true });
+    return;
+  }
   const orig = submitBtn.textContent;
   submitBtn.disabled = true;
   submitBtn.textContent = 'Sending…';
