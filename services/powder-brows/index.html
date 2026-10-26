@@ -359,6 +359,11 @@ details[open] .faq-icon{transform:rotate(45deg);border-color:var(--gold)}
   .compare-row{min-width:480px}
 }
 </style>
+<style>/* fix mobile header: keep burger visible */
+.burger{flex-shrink:0;width:32px}
+@media(max-width:768px){.header-actions{flex-shrink:1;min-width:0}.btn-nav-book{padding:8px 14px;font-size:.62rem}}
+@media(max-width:420px){.header-actions{display:none}}
+</style>
 </head>
 <body>
 
