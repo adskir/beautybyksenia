@@ -11,7 +11,7 @@ vengono pubblicati così come sono.
 - SEO: canonical e og su tutte le pagine, `robots.txt`, `sitemap.xml`. Le pagine usano le immagini `.webp` (i `.jpg/.png` restano per og:image).
 
 ## Stato (23.11.2026, batch 1)
-- Prezzi: $199 per zona, ritocco $149 (uguale per sopracciglia, labbra, eyeliner).
+- Prezzi: $399 barrato → $199 (−50%, come su Instagram da un anno), ritocco $149, uguale per tutte le zone.
 - 35 anni di esperienza, 20K+ clienti (confermati da Ksenia).
 - Telefono nascosto dalle pagine: solo WhatsApp +1 646 951 6222 e modulo (resta in JSON-LD per Google).
 - Recensioni: solo quelle reali dagli screenshot Instagram `recenz1–5`, testo letterale; rimossi rating 5.0/47 e markup AggregateRating.
